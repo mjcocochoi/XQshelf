@@ -1,0 +1,229 @@
+body, html {
+	font-size: 100%;
+	padding: 0;
+	margin: 0;
+	}
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #000;
+	overflow-x: hidden;
+}
+
+p{
+	float:right;
+	font-size:1em;
+}
+
+button {
+	float:right;
+	border: thin solid #000;
+	background: none repeat scroll 0% 0%;
+	padding: 0;
+	display: block;
+	width: 15%;
+	margin: 5px 10px;
+	font-size: 1em;
+}
+
+/*navbar menu content*/
+
+#navMenu {
+	background: #fff;
+	position: fixed;
+	bottom: -150px;
+
+	width: 100%;
+	height: 200px;
+	left: 0;
+	z-index: 1000;
+	overflow: hidden;
+
+	/*transition*/
+	-webkit-transition: all 0.5s ease 0.3s;
+	-moz-transition: all 0.5s ease 0.3s;
+	transition: all 0.5s ease 0.3s;
+}
+
+#navMenu.open {
+	bottom: 0px;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+#navBar {
+	width:30%;
+	float:left;
+}
+
+#navFilter {
+	width:70%;
+	float:right;
+}
+
+#navSmartphones {
+	height: 1.37em;
+	width: auto;
+	margin: 1em;
+}
+
+#nav {
+	overflow:auto;
+}
+
+.navButton {
+	border:none;
+	font-size: 0.75em;
+	background: none;
+	color: #000;
+	width: auto;
+	margin: 0;
+	padding: 1.5em 1em;
+
+	-webkit-transition: color 0.3s ease-in-out;
+	-moz-transition: color 0.3s ease-in-out;
+	-o-transition: color 0.3s ease-in-out;
+	transition: color 0.3s ease-in-out;
+
+}
+
+/*feedback animation for navButton.active*/
+@keyframes highlight {
+ 	0% {
+ 		background: #00A58B;
+ 	}
+ 	100% {
+ 		background: none;
+ 	}
+}
+
+.navButton.active {
+
+	animation: highlight 0.5s ease-in-out;
+	color: #00A58B;
+}
+
+.clearButton{
+	cursor: pointer;
+	color: #000;
+	font-size:0.75em;
+	width: auto;
+	margin-top: 1em;
+	padding: 0.5em;
+}
+
+#filterColour{
+	cursor: pointer;
+}
+
+#shopAll {
+	background:#00A58B;
+	color:#fff;
+}
+
+#icon{
+	margin: 0;
+	margin-right: 18px;
+	margin-left: 12px;
+	padding: 0;
+	float:left;
+
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	transform: rotate(-90deg) scale(1.8, 1.8);
+
+	filter: progid:DXImageTransform.Microsoft.Matrix(
+    M11=-1, M12=1.2246063538223773e-16,
+    M21=-1.2246063538223773e-16,
+    M22=-1, sizingMethod='auto expand');
+	zoom: 0.5;
+}
+
+/*colour filter content*/
+
+#colourButtons {
+	margin-right:14px;
+	margin-top: 8px;
+	float:right;
+	width:70%;
+	overflow:auto;
+}
+
+.colourButton {
+	cursor: pointer;
+	color: #000;
+	padding: 3px 0px;
+
+
+	-webkit-transition: background-color 0.3s ease-in-out;
+	-moz-transition: background-color 0.3s ease-in-out;
+	-o-transition: background-color 0.3s ease-in-out;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.colourButtonActive {
+	background-color: rgba(73, 74, 74, 0.9);
+	color: #fff;
+
+	-webkit-transition: background-color 0.3s ease-in-out;
+	-moz-transition: background-color 0.3s ease-in-out;
+	-o-transition: background-color 0.3s ease-in-out;
+	transition: background-color 0.3s ease-in-out;
+}
+
+/*grid content*/
+
+#content {
+	position: relative;
+	margin-top: 50px;
+}
+
+#allPhones {
+	height: inherit;
+	width: auto;
+	padding-left: 3.125em;
+}
+
+
+
+
+/* Example media queries */
+
+/*@media screen and (max-width: 55.1875em){
+
+	.cbp-spmenu-horizontal {
+		font-size: 75%;
+		height: 110px;
+	}
+
+	.cbp-spmenu-top {
+		top: -110px;
+	}
+
+	.cbp-spmenu-bottom {
+		bottom: -110px;
+	}
+
+}
+
+@media screen and (max-height: 26.375em){
+
+	.cbp-spmenu-vertical {
+		font-size: 90%;
+		width: 190px;
+	}
+
+	.cbp-spmenu-left,
+	.cbp-spmenu-push-toleft {
+		left: -190px;
+	}
+
+	.cbp-spmenu-right {
+		right: -190px;
+	}
+
+	.cbp-spmenu-push-toright {
+		left: 190px;
+	}
+}*/

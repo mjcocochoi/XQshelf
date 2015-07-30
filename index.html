@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Prototype</title>
+        
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+        
+        <style>
+			#bg { position: fixed; top: 0; left: 0; }
+			.bgwidth { width: 100%; }
+			.bgheight { height: 100%; }
+		</style>
+        
+        <!-- Modernizr - class -->
+		<script src="js/modernizr.custom.js"></script>
+        <!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+		<script src="js/classie.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <script src="js/script.js"></script>
+    
+	<body>
+		
+        <!-- bg img resizing for devices-->
+        <!--
+        <div id="_GPL_e6a00_parent_div" style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px; z-index: 2147483647;"></div>
+        -->
+        
+        <img src="img/grid_background.png" id="bg" alt="#">
+
+		<div id="content">
+			<img src="img/all_phones.png" id="allPhones" alt="#">
+        </div>
+        
+		<nav id="navMenu">
+        	
+            <div id="nav">
+            	<section id="navBar">
+                    <img src="img/smartphones.png" id="navSmartphones" alt="#">
+                </section>
+                
+                <section id="navFilters">
+                    <button class="navButton" id="shopAll">SHOP ALL PRODUCTS</button>
+                    
+                    <button class="navButton" id="filterColour">Colour</button>
+                    <p>|</p>
+                    <button class="navButton" id="filterClear">Filter products by</button>
+                </section>
+            </div>
+         
+			<div id="colourButtons">
+            	<button class="colourButton">Orange (1)</button>
+            	<button class="colourButton">Yellow (1)</button>
+            	<button class="colourButton">Red (2)</button>
+            	<button class="colourButton">Silver (2)</button>
+            	<button class="colourButton">Blue (1)</button>
+            	<button class="colourButton">Brown (1)</button>
+                <button class="colourButton">Green (1)</button>
+                <button class="colourButton">Graphite (5)</button>
+                <button class="colourButton">White (14)</button>
+                <button class="colourButton">Black (1)</button>
+                <button class="colourButton">Pink (33)</button>
+                <button class="colourButton">Teal (1)</button>
+            </div>
+		</nav>
+        
+	</body>
+</html>
